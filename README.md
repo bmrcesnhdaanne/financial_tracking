@@ -19,23 +19,6 @@ Data files are **not** stored in Git (see `.gitignore`). On a deployed app, uplo
 
 **Statement file** (required). One row per account per snapshot date; debts are negative.
 
-| column | example |
-|---|---|
-| account_name | roth ira |
-| account_type | retirement, investments, savings, real estate, other assets, or debt |
-| account_institution | FIDELITY |
-| value | 39668.38 |
-| date | 10/5/2026 |
-
-**Retirement plan file** (optional). Income, withdrawals and spending by year.
-
-| column | example |
-|---|---|
-| year | 2027 |
-| category | salary, pension, social security, withdrawal, or spending |
-| source | SS - Peggy |
-| amount | 32076 |
-
 Without a plan file, the sidebar's Retirement section takes a yearly withdrawal and pension/Social Security amount.
 
 ## Deploy to Streamlit Community Cloud
